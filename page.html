@@ -1,0 +1,247 @@
+<section class="section__courses">
+<div class="main_topec">
+    <h1>Pupular <span> Courses</span>  </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur .</p>
+</div>
+
+<div class="main__imgs">
+    <div class="main__img main__img__1" style="background-image: url('https://images.unsplash.com/photo-1543336472-fcf478c443db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" >
+        <h2 >
+            Software Engeneer
+        </h2>
+    </div>
+    <div class="main__img main__img__1" style="background-image: url('https://images.unsplash.com/photo-1543336472-fcf478c443db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" >
+        <h2 >
+            Software Engeneer
+        </h2>
+    </div>
+    <div class="main__img main__img__1" style="background-image: url('https://images.unsplash.com/photo-1543336472-fcf478c443db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" >
+        <h2 >
+            Software Engeneer
+        </h2>
+        <button class="btn-secondary"> apply now ! </button>
+    </div>
+</div>
+
+<a class="btn-primary" href="" style="text-decoration: none; text-align: center; width: 100px; display: block; margin: auto;" > more courses => </a>
+
+</section>
+
+<style>
+  header {
+    height: 500px;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-size: 100%;
+ 
+    background-repeat: no-repeat;
+    color: #F4A261;
+    background-blend-mode: darken;
+   
+}
+
+.headr__center{
+    width: 400px;
+    background-color: #26465396;
+    padding: 20px;
+    text-align: center;
+    transform: skewX(15deg);
+    margin: 0;
+}
+.headr__center p {
+    font-family: 'Niconne', cursive;
+}
+.headr__center h1 {
+    text-transform: uppercase;
+}
+.headr__center > * {
+    transform: skewX(-15deg);
+}
+.btn-primary{
+    padding: 10px 8px ;
+    border: none;
+    border-radius: 10px;
+    background-color: #E9C46A;
+    color: #000000  ;
+    transition: all 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+
+}
+.btn-primary:hover{
+    transform: translateY(-2px)  skewX(-15deg);
+  
+}
+.btn-primary:active , .btn-primary:focus{
+    outline: none;
+}
+
+.btn-primary:active{
+    transform:translateY(0px)  skewX(-15deg) ;
+}
+
+.section__courses{
+    min-height: 600px;
+    width: calc(100% - 400px);
+    background-color: #fff;
+    margin: 0;
+    padding: 100px 200px;
+}
+.main_topec{
+    text-align: center;
+}
+
+.main_topec h1{
+
+    font-size: 30px;
+    color: #264653;
+}
+.main_topec h1 span{
+
+
+   color: #F4A261;
+}
+
+.main__imgs{
+
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 100px;
+}
+.main__imgs div{
+
+    flex: 1;
+    height: 310px;
+    margin: 20px;
+}
+
+.main__img {
+    position: relative;
+    background-size: cover;
+overflow: hidden;
+}
+
+.main__img h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    padding: 20px;
+    border-right: 3px solid #E9C46A;
+    background-color:#264653a2 ;
+    color: #fff;
+    /* transform: translateX(-235px); */
+    transition: all 1s ;
+    cursor: pointer;
+}
+
+.main__img:hover h2{
+    /* background-color: black; */
+    /* bottom: 60%; */
+    /* padding-bottom: 40%; */
+    /* transform: translate(0); */
+}
+.main__img:hover .btn-secondary{
+    opacity: 1;
+}
+
+.btn-secondary{
+    padding: 10px 8px;
+    outline:#E9C46A ;
+    background-color: #E9C46A;
+    color: #FFF;
+    border-style: none;
+    position: absolute;
+    bottom: 34%;
+    left: 30%;
+    opacity: 0;
+    transition: all 1s;
+    cursor: pointer;
+}
+.btn-secondary:hover {
+    background-color:#264653a2 ;
+    outline: #E9C46A;
+}
+
+footer {
+    text-align: center;
+    background-color: #F4A261;
+    padding: 30px;
+
+}
+
+.courses__edit{
+
+  width: 1000px;
+  margin: auto;
+
+}
+.course{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.course > *{
+    flex: 1;
+}
+.course .left{
+    /* width: 20%; */
+
+}
+.course .center {
+    flex: 2;
+    margin: 0 20px;
+    border-right: 1px solid #e5eaef;
+    display: inline-block;
+}
+.course .left img{
+    width: 100%;
+
+}
+hr{
+    color: #e5eaef;
+}
+
+.add__course{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color:#F4A261 ;
+}
+
+.add__course__form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+ 
+}
+.add__course__form label {
+
+    color: #E9C46A;
+    font-size: 20px;
+    margin: 5px 0  ;
+}
+
+.add__course__form input {
+    height: 30px;
+    outline: none;
+    border-style: none;
+    border-bottom:1px solid #264653  ;
+    margin-bottom: 20px;
+}
+
+.add__course__form button {
+    align-self: center;
+}
+
+.center {
+    text-align: center;
+}
+</style>
